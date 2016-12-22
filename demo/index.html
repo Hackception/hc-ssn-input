@@ -10,6 +10,8 @@
 
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../paper-input-container.html">
+    <link rel="import" href="../paper-input-error.html">
     <link rel="import" href="../hc-ssn-input.html">
 
     <style is="custom-style" include="demo-pages-shared-styles">
@@ -24,5 +26,16 @@
         </template>
       </demo-snippet>
     </div>
+
+    <h3>Inputs can have custom logic</h3>
+    <demo-snippet>
+      <template>
+        <paper-input-container always-float-label auto-validate attr-for-value="value">
+          <label>Social Security Number</label>
+          <ssn-input class="paper-input-input"></ssn-input>
+          <paper-input-error>SSN invalid!</paper-input-error>
+        </paper-input-container>
+      </template>
+    </demo-snippet>
   </body>
 </html>
